@@ -8,8 +8,19 @@
  * ,... and so on
  */
 function buttonClick(text) {
-  console.log("Clicking", text);
-  printOnConsole(text);
+  if (
+    text !== 'AC' &&
+    text !== '=' &&
+    text !== '-' &&
+    text !== 'x' &&
+    text !== '+' &&
+    text !== '.' &&
+    text !== '±' &&
+    text !== '÷' &&
+    text !== '%'
+  ) {
+    printOnConsole(text);
+  }
 }
 
 /** Supporting functions
@@ -18,5 +29,5 @@ function buttonClick(text) {
  */
 
 // Remove Me after testing
-printOnConsole("123");
-updateHistory(["This is a sample historry", "1 + 5 = 6", "5 x 10 = 50"]);
+printOnConsole('123');
+updateHistory(['This is a sample historry', '1 + 5 = 6', '5 x 10 = 50']);
