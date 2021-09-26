@@ -9,7 +9,7 @@
  */
 function buttonClick(text) {
   console.log("Clicking", text);
-  // Write your code here
+  printOnConsole(text);
 }
 
 /** Supporting functions
